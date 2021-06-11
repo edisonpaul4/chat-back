@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>chatPM_back</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FileContextCore" Version="3.4.0" />
+    <PackageReference Include="SapphireDb" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+<ItemGroup>
+      <_ContentIncludedByDefault Remove="Data\Store\Category.json" />
+      <_ContentIncludedByDefault Remove="Data\Store\Notice.json" />
+      <_ContentIncludedByDefault Remove="Data\Store\User.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Data\Chat\Store" />
+    </ItemGroup>
+</Project>
